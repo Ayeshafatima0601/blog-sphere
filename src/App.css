@@ -1,0 +1,51 @@
+.App {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.PostItem {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  
+  .PostItem h3 {
+    margin: 0px;
+    flex: 1;
+  }
+  
+  .PostItem p {
+    margin: 0px;
+    flex: 20;
+    color: #555;
+  }
+  
+  .PostItem button {
+    margin: 2px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  
