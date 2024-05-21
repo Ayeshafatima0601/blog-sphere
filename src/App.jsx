@@ -73,12 +73,18 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <div className='App'>
       <h1>BlogSphere</h1>
-      <PostForm onNewPostCreated={handleNewPostCreated} editPost={editPost} />
+      <div className="search">
       <SearchBar onSearch={handleSearch} />
       <Filter posts={posts} onFilterChange={handleFilterChange} />
-      <PostList posts={filteredPosts} onEdit={handleEdit} onDelete={handleDelete} />
+      </div>
+      <div className="form">
+        <PostForm onNewPostCreated={handleNewPostCreated} editPost={editPost} />
+      </div>
+      <div className="list">
+        <PostList posts={filteredPosts} onEdit={handleEdit} onDelete={handleDelete} />
+      </div>
     </div>
   );
 };

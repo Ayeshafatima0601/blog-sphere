@@ -23,26 +23,21 @@ const Filter = ({ posts, onFilterChange }) => {
 
   return (
     <div>
-      <select value={selectedCategory} onChange={handleCategoryChange}>
-        <option value="">All Categories</option>
-        {Array.from(new Set(posts.map(post => post.category))).map((category, index) => (
-          <option key={index} value={category}>{category}</option>
-        ))}
-      </select>
       <input
         type="text"
         placeholder="Enter tags"
         value={selectedTags}
         onChange={handleTagsChange}
-        style={{
-          border: '1px solid #ccc',
-          width: '50%',
-          padding: '10px',
-          margin: '10px',
-          borderRadius: '5px',
-          fontSize: '16px',
-        }}
+       style={{
+        marginLeft: '10px',
+       }}
       />
+      <select value={selectedCategory} onChange={handleCategoryChange}>
+        <option value="" className="categories">All Categories</option>
+        {Array.from(new Set(posts.map(post => post.category))).map((category, index) => (
+          <option key={index} value={category}>{category}</option>
+        ))}
+      </select>
     </div>
   );
 };

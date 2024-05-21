@@ -13,16 +13,11 @@ const SearchBar = ({ onSearch }) => {
     <div>
       <input
         type="text"
-        placeholder="Search"
+        placeholder="Search Category"
         value={searchTerm}
         onChange={handleSearch}
         style={{
-          border: '1px solid #ccc',
-          width: '98%',
-          padding: '10px',
-          margin: '10px',
-          borderRadius: '5px',
-          fontSize: '16px',
+          width: '300px',
         }}
       />
     </div>

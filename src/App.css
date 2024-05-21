@@ -1,51 +1,213 @@
 .App {
-    font-family: Arial, sans-serif;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  text-align: center;
 }
 
 h1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  color: white !important;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: oblique !important;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+h2 {
+  margin-bottom: 20px;
+  color: white !important;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: oblique !important;
+}
+
+.form button {
+  padding: 10px;
+  margin-left: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
+
 .PostItem {
-    display: flex;
-    justify-content: space-between;
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-  }
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 10px;
+  width: 500px;
+}
+
+.PostItem h3 {
+  margin: 0px;
+  flex: 1;
+}
+
+.PostItem p {
+  margin: 0px;
+  flex: 5;
+  color: #555;
+}
+
+.PostItem button {
+  margin: 1px;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  cursor: pointer;}
+
+.App .search {
+  margin-left: 450px;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  border-radius: 5px;
+}
+
+.search input {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100px;
+  font-size: medium !important;
+  ;
+}
+
+
+.App .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.search select {
+  width: 150px !important;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.App .filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.filter select {
+  width: 150px !important;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.filter input {
+  width: 150px !important;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.filter button {
+  margin: 1px;
+  margin-left: 10px;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.App .pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  margin: 1px;
+  margin-left: 10px;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.pagination .active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination .disabled {
+  background-color: #ccc;
+  color: white;
+}
+
+.pagination .disabled:hover {
+  background-color: #ccc;
+  color: white;
+}
+
+.pagination .disabled:active {
+  background-color: #ccc;
+  color: white;
+}
+
+.pagination .disabled:focus {
+  background-color: #ccc;
+  color: white;
+}
+
+.pagination .disabled:visited {
+  background-color: #ccc;
+  color: white;
+}
+
+.pagination .disabled:link {
+  background-color: #ccc;
+  color: white;
+}
+
+.App .form {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 450px;
+  margin-right: 450px;
   
-  .PostItem h3 {
-    margin: 0px;
-    flex: 1;
-  }
-  
-  .PostItem p {
-    margin: 0px;
-    flex: 20;
-    color: #555;
-  }
-  
-  .PostItem button {
-    margin: 2px;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    cursor: pointer;
-  }
-  
+}
+
+.form textarea{
+  display: block;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-left: 100px;
+  margin-top: 10px;
+  height: 70px;
+}

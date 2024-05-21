@@ -39,12 +39,13 @@ const PostForm = ({ onNewPostCreated, editPost }) => {
         required
         style={{
           border: '1px solid #ccc',
-          width: '98%',
-          padding: '10px',
-          margin: '10px',
+          width: '400px',
+          marginRight: '10px',
+          padding: '5px',
           borderRadius: '5px',
-          fontSize: '16px',
+          fontSize: '15px',
         }}
+
       />
       <textarea
         placeholder="Content"
@@ -52,40 +53,38 @@ const PostForm = ({ onNewPostCreated, editPost }) => {
         onChange={(e) => setContent(e.target.value)}
         style={{
           border: '1px solid #ccc',
-          width: '98%',
-          padding: '10px',
-          margin: '10px',
+          width: '400px',
+          marginRight: '10px',
+          padding: '5px',
           borderRadius: '5px',
-          fontSize: '16px',
+          fontSize: '15px',
         }}
       />
       <input
+        className='form-control'
         type="text"
         placeholder="Category"
         value={category}
         onChange={(e) => setCategory(e.target.value)}
         style={{
-          border: '1px solid #ccc',
-          width: '98%',
-          padding: '10px',
-          margin: '10px',
+          padding: '5px',
           borderRadius: '5px',
-          fontSize: '16px',
+          fontSize: '15px',
+          width: '130px',
         }}
       />
       <input
+        className='form-control'
         type="text"
         placeholder="Tags"
         value={tags}
         onChange={(e) => setTags(e.target.value)}
         style={{
-          border: '1px solid #ccc',
-          width: '90%',
-          padding: '10px',
-          paddingRight: '50px',
-          margin: '10px',
+          marginLeft: '10px',
+          padding: '5px',
           borderRadius: '5px',
-          fontSize: '16px',
+          fontSize: '15px',
+          width: '100px',
         }}
       />
       <button type="submit">Save</button>
