@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+    background-image: url(https://cdn-media-2.freecodecamp.org/w1280/5f9c9cfc740569d1a4ca3543.jpg);
     background-size: 300% 300%;
     animation: gradientBG 12s ease-in-out infinite;
 }

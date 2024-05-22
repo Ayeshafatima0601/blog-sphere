@@ -21,9 +21,10 @@ h2 {
 
 .form button {
   padding: 10px;
-  margin-left: 25px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-left: 40px;
+  padding-right: 35px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 10px;
@@ -32,16 +33,15 @@ h2 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: green;
 }
 
 
@@ -52,8 +52,9 @@ button:hover {
   border: 1px solid #ddd;
   padding: 5px;
   margin: 10px 0;
-  border-radius: 10px;
-  width: 500px;
+  border-radius: 5px;
+  margin-right: 22px;
+  width: 390px;
 }
 
 .PostItem h3 {
@@ -63,15 +64,15 @@ button:hover {
 
 .PostItem p {
   margin: 0px;
-  flex: 5;
+  flex: 0;
   color: #555;
 }
 
 .PostItem button {
   margin: 1px;
   padding: 3px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #007bff;
   color: white;
   border: none;
@@ -106,7 +107,7 @@ button:hover {
 }
 
 .search select {
-  width: 150px !important;
+  width: 125px !important;
   padding: 5px;
   border: 1px solid #ddd;
   border-radius: 5px;

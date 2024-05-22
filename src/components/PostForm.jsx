@@ -39,8 +39,8 @@ const PostForm = ({ onNewPostCreated, editPost }) => {
         required
         style={{
           border: '1px solid #ccc',
-          width: '400px',
-          marginRight: '10px',
+          width: '390px',
+          marginRight: '20px',
           padding: '5px',
           borderRadius: '5px',
           fontSize: '15px',
@@ -53,8 +53,7 @@ const PostForm = ({ onNewPostCreated, editPost }) => {
         onChange={(e) => setContent(e.target.value)}
         style={{
           border: '1px solid #ccc',
-          width: '400px',
-          marginRight: '10px',
+          width: '390px',
           padding: '5px',
           borderRadius: '5px',
           fontSize: '15px',
@@ -80,11 +79,11 @@ const PostForm = ({ onNewPostCreated, editPost }) => {
         value={tags}
         onChange={(e) => setTags(e.target.value)}
         style={{
-          marginLeft: '10px',
+          marginLeft: '5px',
           padding: '5px',
           borderRadius: '5px',
           fontSize: '15px',
-          width: '100px',
+          width: '120px',
         }}
       />
       <button type="submit">Save</button>
